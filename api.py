@@ -47,7 +47,7 @@ def api_id():
   else:
       return "Error: No game field provided. Please specify a game."
 
-  df = pd.read_csv("C:/Users/Gekko/OneDrive/Desktop/recommandation/games.csv")
+  df = pd.read_csv("https://raw.githubusercontent.com/FreaksMind/recommendation-api/master/games.csv)
   data = ['genres', 'publisher', 'year']
   def data_c(row):
     return row['genres'] + " " + row['publisher'] + " " + row['year']
