@@ -1,5 +1,5 @@
-import flask
-from flask import request, jsonify
+import flask from flask
+import request, jsonify
 import pandas as pd
 import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
@@ -47,7 +47,7 @@ def api_id():
   else:
       return "Error: No game field provided. Please specify a game."
 
-  df = pd.read_csv("https://raw.githubusercontent.com/FreaksMind/recommendation-api/master/games.csv)
+  df = pd.read_csv("C:/Users/Gekko/OneDrive/Desktop/recommandation/games.csv")
   data = ['genres', 'publisher', 'year']
   def data_c(row):
     return row['genres'] + " " + row['publisher'] + " " + row['year']
