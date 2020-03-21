@@ -1,4 +1,4 @@
-import flask from flask
+import flask 
 import request, jsonify
 import pandas as pd
 import numpy as np
