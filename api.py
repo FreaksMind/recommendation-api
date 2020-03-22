@@ -9,11 +9,11 @@ app = flask.Flask(__name__)
 
 @app.route('/', methods = ['GET'])
 def home():
-  return redirect("http://www.freaksmind.me", code=302)
+  return redirect("https://www.freaksmind.me", code=302)
 
 @app.errorhandler(404)
 def page_not_found(e):
-  return jsonify("Not Found"), 404
+  return jsonify("Not Found."), 404
 
 @app.route('/v1/games/recommended/', methods = ['GET'])
 def api_id():
