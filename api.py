@@ -13,7 +13,7 @@ def home():
 
 @app.errorhandler(404)
 def page_not_found(e):
-  return jsonify("Not Found."), 404
+  return jsonify("Not Found"), 404
 
 @app.route('/v1/games/recommended/', methods = ['GET'])
 def api_id():
