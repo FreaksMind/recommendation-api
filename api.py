@@ -1,5 +1,5 @@
 import flask 
-import request, jsonify
+from flask import request, jsonify
 import pandas as pd
 import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
